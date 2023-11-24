@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="media/code.js"></script>
+    <link rel="stylesheet" href="media/style.css">
+    <link rel="icon" href="media/img/favicon.png" type="image/ico">
+    <title>Contacts</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Film Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <div></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="films.html">films</a></li>
+                    <li class="nav-item"><a class="nav-link" href="review.html">review</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacts.html">contacts</a></li>
+                </ul>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mlogin">Login</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mregister">Registration</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="mlogin">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form>
+                <div class="modal-body" id="logmodalBody">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="logemail" placeholder="Enter email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="logpswd" placeholder="Enter password">
+                        <label for="pwd">Password</label>
+                    </div>
+                </div>
+                <div class="d-flex modal-footer justify-content-between">
+                    <input type="button" id="loginbnt" class="form-control text-bg-primary" value="login" style="width: 80px;">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mregister">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Registration</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form>
+                <div class="modal-body" id="regmodalBody">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Person</span>
+                        <input type="text" class="form-control" placeholder="First Name">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="regemail" placeholder="Enter email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="regpswd" placeholder="Enter password">
+                        <label for="pwd">Password</label>
+                    </div>
+                </div>
+
+                <div class="d-flex modal-footer justify-content-between">
+                    <input type="button" class="form-control text-bg-primary" id="regbtn" value="register" style="width: 80px;">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-4 contactImg"><img src="media/img/contacts/previewImg.jpg" alt="My Face image" width="100%"></div>
+            <div class="col-md-8 contactInfo">
+                <ul>
+                    <li>Full name: Nagashybai Mukhtar</li>
+                    <li>Age: 19</li>
+                    <li>Status: student</li>
+                    <li>Speciality: Computer Science</li>
+                    <li>Place of Residence (city): Astana</li>
+                    <li>Hobbies: playing video games, watching movies and programming</li>
+                    <li>Description:
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa nobis tenetur dicta nemo 
+                            voluptatem necessitatibus eos aliquam ullam rem id magni soluta iusto, corporis dolor 
+                            eveniet asperiores totam quam debitis sint odio praesentium expedita quos omnis voluptatum. 
+                            Qui, ducimus itaque officiis eligendi iusto ullam ipsa minus delectus ex reprehenderit mollitia.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="images">
+            <div class="imgBox"><img src="media/img/contacts/contactImg1.jpg" alt="image"></div>
+            <div class="imgBox"><img src="media/img/contacts/contactImg2.jpg" alt="image"></div>
+            <div class="imgBox"><img src="media/img/contacts/contactImg3.jpg" alt="image"></div>
+            <div class="imgBox"><img src="media/img/contacts/contactImg4.jpg" alt="image"></div>
+            <div class="imgBox"><img src="media/img/contacts/contactImg5.jpg" alt="image"></div>
+            <div class="imgBox"><img src="media/img/contacts/contactImg6.jpg" alt="image"></div>
+            <div class="clean"></div>          
+        </div>
+    </section>
+    <footer>
+        <div class="container d-flex justify-content-between">
+            <div class="row navi">
+                <div class="col-md-3"><a href="index.html">home</a></div>
+                <div class="col-md-3"><a href="films.html">films</a></div>
+                <div class="col-md-3"><a href="review.html">review</a></div>
+                <div class="col-md-3"><a href="contacts.html">contacts</a></div>
+            </div>
+            <div>
+                <a href="#" class="fa fa-facebook fa-lg"></a>
+                <a href="#" class="fa fa-twitter fa-lg"></a>
+                <a href="#" class="fa fa-reddit fa-lg"></a>
+                <a href="#" class="fa fa-whatsapp fa-lg"></a>
+                <a href="#" class="fa fa-github fa-lg"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="media/code.js"></script>
+    <link rel="stylesheet" href="media/style.css">
+    <link rel="icon" href="media/img/favicon.png" type="image/ico">
+    <title>Review</title>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Film Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <div></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="films.html">films</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="review.html">review</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacts.html">contacts</a></li>
+                </ul>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mlogin">Login</button>
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#mregister">Registration</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="mlogin">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-header">
+              <h4 class="modal-title">Login</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form>
+                <div class="modal-body" id="logmodalBody">
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="logemail" placeholder="Enter email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="logpswd" placeholder="Enter password">
+                        <label for="pwd">Password</label>
+                    </div>
+                </div>
+                <div class="d-flex modal-footer justify-content-between">
+                    <input type="button" id="loginbnt" class="form-control text-bg-primary" value="login" style="width: 80px;">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="modal fade" id="mregister">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Registration</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <form>
+                <div class="modal-body" id="regmodalBody">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Person</span>
+                        <input type="text" class="form-control" placeholder="First Name">
+                        <input type="text" class="form-control" placeholder="Last Name">
+                    </div>
+                    <div class="form-floating mb-3 mt-3">
+                        <input type="text" class="form-control" id="regemail" placeholder="Enter email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-floating mt-3 mb-3">
+                        <input type="text" class="form-control" id="regpswd" placeholder="Enter password">
+                        <label for="pwd">Password</label>
+                    </div>
+                </div>
+
+                <div class="d-flex modal-footer justify-content-between">
+                    <input type="button" class="form-control text-bg-primary" id="regbtn" value="register" style="width: 80px;">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row review">
+            <div class="col-lg-4 reviewCol" id="audioPlayer">
+                <div id="reviewImgs" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#reviewImgs" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#reviewImgs" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#reviewImgs" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#reviewImgs" data-bs-slide-to="3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="media/img/fast_and_furious_hobbs_and_shaw.jpg" alt="review image" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/img/review1.jpg" alt="review image (1)" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/img/review2.avif" alt="review image (2)" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/img/review3.jpg" alt="review image (3)" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#reviewImgs" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#reviewImgs" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-8 reviewInfo">
+                <h2 class="mb-4">The Fast and Furious: Hobbs and Shaw</h2>
+                <div class="mb-5 fs-5"><span class="date">23.11.2023</span>Score: <span class="badge bg-primary">9.5/10</span></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, excepturi. Eos, sunt aliquam. Minima nulla 
+                    vel optio, labore officiis impedit voluptatem tempora alias amet ullam voluptates sint blanditiis nesciunt 
+                    numquam eum repellat provident perferendis pariatur soluta sunt! Soluta harum dolorum laudantium explicabo 
+                    debitis a quis quod! Ipsum explicabo consequuntur amet.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe rerum laudantium delectus excepturi? 
+                    Possimus non aliquid maiores soluta mollitia ad quis. Animi dicta culpa consequatur magni, voluptatum labore 
+                    magnam alias quaerat?
+                </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nesciunt, repellat explicabo culpa in numquam 
+                    saepe laudantium enim nostrum quidem dicta?
+                </p>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#similar">Similar</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#comments">Comments</a>
+            </li>
+            </li>
+        </ul>
+        <div class="tab-content p-3 mb-5">
+            <div class="tab-pane container active" id="similar">
+                <h3>Similar Films</h3>
+                <div class="d-flex justify-content-center">
+                    <div class="card film">
+                        <a class="m-1" href="review.html"><img class="card-img-top" src="media/img/fast_and_furious6.jpg" alt="the fast and furious 6"></a>
+                        <div class="card-footer">
+                            <a href="review.html">The Fast and Furious 6</a>
+                        </div>
+                    </div>
+                    <div class="card film">
+                        <a class="m-1" href="review.html"><img class="card-img-top" src="media/img/fast_and_furious7.jpg" alt="the fast and furious 7"></a>
+                        <div class="card-footer">
+                            <a href="review.html">The Fast and Furious 7</a>
+                        </div>
+                    </div>
+                    <div class="card film">
+                        <a class="m-1" href="review.html"><img class="card-img-top" src="media/img/fast_and_furious8.jpg" alt="the fast and furious 8"></a>
+                        <div class="card-footer">
+                            <a href="review.html">The Fast and Furious 8</a>
+                        </div>
+                    </div>
+                    <div class="card film">
+                        <a class="m-1" href="review.html"><img class="card-img-top" src="media/img/fast_and_furious10.jpg" alt="the fast and furious 10"></a>
+                        <div class="card-footer">
+                            <a href="review.html">The Fast and Furious 10</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane container fade" id="comments">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>User2003</h3>
+                        <p class="text-secondary">22.11.2023</p>
+                    </div>
+                    <div class="col-sm-8 mb-2">
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi rem velit enim voluptatem eaque quas sint expedita, nostrum unde qui?</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Nagashybay Mukhtar</h3>
+                        <p class="text-secondary">20.11.2023</p>
+                    </div>
+                    <div class="col-sm-8 mb-2">
+                        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi reprehenderit amet esse.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>Nurbol2005</h3>
+                        <p class="text-secondary">17.07.2021</p>
+                    </div>
+                    <div class="col-sm-8 mb-2">
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam dicta perferendis cum? Unde optio adipisci vel officia, atque iste minima sequi saepe corrupti alias, voluptatem deserunt molestias labore dolor illo.</p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h3>qwerty123</h3>
+                        <p class="text-secondary">31.02.2075</p>
+                    </div>
+                    <div class="col-sm-8 mb-2">
+                        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui alias aliquam, rem provident, veniam eveniet nisi iste assumenda, incidunt magni obcaecati modi. Nobis?</p>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div class="container d-flex justify-content-between">
+            <div class="row navi">
+                <div class="col-md-3"><a href="index.html">home</a></div>
+                <div class="col-md-3"><a href="films.html">films</a></div>
+                <div class="col-md-3"><a href="review.html">review</a></div>
+                <div class="col-md-3"><a href="contacts.html">contacts</a></div>
+            </div>
+            <div>
+                <a href="#" class="fa fa-facebook fa-lg"></a>
+                <a href="#" class="fa fa-twitter fa-lg"></a>
+                <a href="#" class="fa fa-reddit fa-lg"></a>
+                <a href="#" class="fa fa-whatsapp fa-lg"></a>
+                <a href="#" class="fa fa-github fa-lg"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

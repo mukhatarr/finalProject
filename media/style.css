@@ -1,0 +1,364 @@
+*{
+    font-family: 'Roboto', sans-serif;;
+}
+.clean {
+    clear: both;
+}
+
+/* ----------------------------------- header ------------------------------------- */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    background-image: url('img/film_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 70% 0;
+}
+header::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+header * {
+    position: relative;
+    z-index: 1;
+}
+
+nav.navbar {
+    background-color: rgb(207, 209, 255);
+}
+
+.hideAlert {
+    visibility: hidden;
+}
+
+header .myText {
+    width: 60%;
+    margin: auto;
+    padding-top: 300px;
+    text-align: center;
+}
+header .myText h1 { color: rgb(255, 255, 255); }
+header .myText p {
+    font-size: 1.2em;
+    color: rgb(255, 255, 255); 
+}
+
+
+/* ----------------------------------- section ------------------------------------ */
+
+section {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+/* ------- quotations --------- */
+section .quotations {
+    margin-bottom: 200px;
+}
+section .quotation {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 2px solid rgb(155, 160, 255);
+    border-radius: 5px;
+}
+section .quotation .inner{
+    width: 80%;
+    height: 80px;
+    margin: 0 10% 0 10%;
+    text-align: center;
+}
+section .quotation .inner:last-child {
+    width: 100%;
+    margin: 0;
+    text-align: right;
+}
+section .quotation .inner p {
+    margin: 5px 10px 10px 0;
+}
+section .quotation i {
+    color: rgb(155, 160, 255);;
+    font-size: 1.6em;
+    padding: 10px;
+}
+abbr[title]{
+    text-decoration: none;
+}
+q::before{
+    content: "";
+}
+
+/* ---- film introduction ----- */
+section .filmIntro p{
+    text-align: justify;
+    text-align-last: left;
+    text-indent: 30px;
+}
+
+/* ---- section background ----- */
+.sectionBackground {
+    position: relative;
+    background-image: url('img/section_background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 0;
+    width: 100%;
+    height: 400px;
+}
+.sectionBackground::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.548);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* ---------- popular ---------- */
+.popular{
+	position: relative;
+	overflow: hidden;
+	width: 1230px;
+	height: 550px;
+	padding: 20px 30px 20px 30px;
+	margin: auto;
+	margin-bottom: 200px;
+	box-shadow: 0 5px 20px rgba(80,80,80,.2);
+}
+@media only screen and (max-width: 1400px) {
+    .popular {
+        width: 930px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .popular {
+        width: 630px;
+    }
+}
+@media only screen and (max-width: 767.5px) {
+    .popular {
+        width: 330px;
+    }
+}
+.popular h3{
+	font-size: 1.6em;
+	margin: 0 0 15px 15px;
+}
+.popular .filmBox{
+	position: relative;
+    display: flex;
+	left: 0px;
+	width: 5000px;
+}
+/* buttons */
+.popular .previous,
+.popular .next {
+	position: absolute;
+	z-index: 5;
+	width: 30px;
+	height: 100px;
+	top: 225px;
+
+	transition-property: background-color;
+  	transition-duration: 300ms;
+}
+.popular .previous { left: 0; }
+.popular .next { right: 0;}
+.popular i {
+    position: relative;
+    top: 35px;
+    left: 3px;
+    font-size: 2em;
+    color: rgb(155, 160, 255);
+}
+.popular .previous:hover,
+.popular .next:hover{
+	background-color: rgba(80,80,80,.6);
+}
+/* film cards */
+.film.card {
+    width: 270px;
+    margin-right: 30px;
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+}
+.film.card .card-footer {
+    background-color: rgb(245, 245, 245);
+}
+.film.card a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* ----------- aside ----------- */
+aside {
+    width: 100%;
+    margin-bottom: 100px;
+    padding: 20px;
+    border: 2px solid rgb(155, 160, 255);
+    border-radius: 5px;
+}
+aside a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    transition: color 100ms;
+}
+aside a:hover {
+    color: #717171;;
+}
+aside input {
+    height: 38px;
+}
+aside button {
+    height: 38px;
+    width: 100%;
+}
+
+/* -- filmCards in films.html -- */
+.films {
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+.films .film.card {
+    float: left;
+    width: 300px;
+    margin: 0 10px 20px 10px;
+    height: 520px;
+}
+
+/* ----- review information ---- */
+.review {
+    width: 90%;
+    margin: auto;
+}
+.review .date {
+    margin-right: 30px;
+    color: #575757;
+}
+.review p{
+    text-align: justify;
+    text-align-last: left;
+    text-indent: 30px;
+}
+.reviewCol { height: 650px; }
+#reviewImgs {
+    width: 100%;
+    margin-bottom: 30px;
+}
+@media only screen and (max-width: 992px) {
+    #reviewImgs {
+        width: 330px;
+        margin: auto;
+    }
+    .reviewCol { height: 550px; }
+}
+.reviewInfo {
+    padding-left: 50px;
+}
+
+/* ---- contact information ---- */
+.contactImg { margin-bottom: 20px; }
+.contactInfo {
+    border: 2px solid rgb(155, 160, 255);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.4em;
+}
+@media only screen and (max-width: 1199.5px) {
+    .contactInfo { font-size: 1.1em; }
+}
+@media only screen and (max-width: 991px) {
+    .contactInfo { font-size: 1em; }
+}
+.contactInfo p{
+    text-align: justify;
+    text-align-last: left;
+    text-indent: 30px;
+}
+
+/* ----------- gallery --------- */
+.images {
+    width: 1030px;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.images .imgBox {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+}
+.images img {
+    position: relative;
+    width: 100%;
+}
+
+.targetImage {
+    z-index: 10;
+}
+
+/* ------------------------------------ footer ------------------------------------ */
+
+footer {
+    background-color: rgb(207, 209, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer .navi a {
+    padding: 5px;
+    font-size: 1.2em;
+    color: #262626;
+    text-decoration: none;
+    transition: color 100ms;
+}
+footer .navi a:hover {
+    color: #717171;;
+}
+
+footer .fa {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+footer .fa:hover {
+    opacity: 0.7;
+}
+footer .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+footer .fa-reddit {
+    background: #ff5700;
+    color: white;
+}
+footer .fa-github {
+    background: #030b23;
+    color: white;
+}
+footer .fa-whatsapp {
+    background: #00ac17;
+    color: white;
+}
